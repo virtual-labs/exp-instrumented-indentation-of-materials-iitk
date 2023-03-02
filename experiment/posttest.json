@@ -2,24 +2,75 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. The loading curve during instrumented indentation is given by P=α_1 h^1.5 for which type of indenter tip:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Berkovich",
+        "b": "Vickers",
+        "c": "Spherical",
+        "d": "Cylindrical"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The exponent of 1.5 is for spherical indenter tip, whereas a value of 1 for cylindrical punch and value of 2 is used for conical indentation tips.",
+        "b": "The exponent of 1.5 is for spherical indenter tip, whereas a value of 1 for cylindrical punch and value of 2 is used for conical indentation tips.",
+        "c": "The exponent of 1.5 is for spherical indenter tip, whereas a value of 1 for cylindrical punch and value of 2 is used for conical indentation tips.",
+        "d": "The exponent of 1.5 is for spherical indenter tip, whereas a value of 1 for cylindrical punch and value of 2 is used for conical indentation tips."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. The unloading curve during instrumented indentation using a Berkovich indenter tip is given as (where P is applied load, h is instantaneous depth, hf is final contact depth after unloading, hc is the and hmax is maximum depth, and α2 is constant):",
+      "answers": {
+        "a": "P=α<sub>2</sub> (h-h<sub>max</sub> )<sup>1.5</sup>",
+        "b": "P=α<sub>2</sub> (h-h<sub>f</sub>)<sup>2</sup>",
+        "c": "P=α<sub>2</sub> (h<sub>max</sub>-h<sub>f</sub> )<sup>1.5</sup>",
+        "d": "P=α<sub>2</sub> (h<sub>f</sub>-h<sub>max</sub> )<sup>2</sup>"
+      },
+      "explanations": {
+        "a": "The exponent of 2 is used for Berkovich indentation tips, and the unloading is defined by difference between instantaneous depth and final depth after unloading",
+        "b": "The exponent of 2 is used for Berkovich indentation tips, and the unloading is defined by difference between instantaneous depth and final depth after unloading",
+        "c": "The exponent of 2 is used for Berkovich indentation tips, and the unloading is defined by difference between instantaneous depth and final depth after unloading",
+        "d": "The exponent of 2 is used for Berkovich indentation tips, and the unloading is defined by difference between instantaneous depth and final depth after unloading"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The relationship of contact area (A) with the contact depth (hcontact) for a Berkovich tip is:",
+      "answers": {
+        "a": "A<sub>contact</sub>=24.5 h<sub>contact</sub><sup>2</sup>",
+        "b": "A<sub>contact</sub>=24.5 h<sub>contact</sub>",
+        "c": "A<sub>contact</sub>=2 πR h<sub>contact</sub><sup>2</sup>",
+        "d": "A<sub>contact</sub>=2 πR h<sub>contact</sub>"
+      },
+      "explanations": {
+        "a": "The geometric relation of the contact area for a three sided Bekovich’s as well as 4-sided Vicker’s indenter is ~ 24.5 h<sup>2</sup>",
+        "b": "The geometric relation of the contact area for a three sided Bekovich’s as well as 4-sided Vicker’s indenter is ~ 24.5 h<sup>2</sup>",
+        "c": "The geometric relation of the contact area for a three sided Bekovich’s as well as 4-sided Vicker’s indenter is ~ 24.5 h<sup>2</sup>",
+        "d": "The geometric relation of the contact area for a three sided Bekovich’s as well as 4-sided Vicker’s indenter is ~ 24.5 h<sup>2</sup>"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "4. The following portion of the load-displacement curve is used to extract the Young’s modulus of material during instrumented indentation:",
+      "answers": {
+        "a": "First 5-20 % of loading curve",
+        "b": "Last 5-20 % of loading curve",
+        "c": "First 5-20 % of unloading curve",
+        "d": "Last 5-20 % of unloading curve"
+      },
+      "explanations": {
+        "a": "The first 5-20% of unloading curve is utilized in calculating the Young’s modulus as the immediate response upon unloading is purely elastic, and later portion of curve may exhibit plastic recovery and viscoplastic response.",
+        "b": "The first 5-20% of unloading curve is utilized in calculating the Young’s modulus as the immediate response upon unloading is purely elastic, and later portion of curve may exhibit plastic recovery and viscoplastic response.",
+        "c": "The first 5-20% of unloading curve is utilized in calculating the Young’s modulus as the immediate response upon unloading is purely elastic, and later portion of curve may exhibit plastic recovery and viscoplastic response.",
+        "d": "The first 5-20% of unloading curve is utilized in calculating the Young’s modulus as the immediate response upon unloading is purely elastic, and later portion of curve may exhibit plastic recovery and viscoplastic response."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Which of the following equations govern the evaluation of reduced Young’s modulus from instrumented indentation:",
       "answers": {
         "a": "answer1",
         "b": "answer2",
