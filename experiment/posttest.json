@@ -72,18 +72,35 @@
     {
       "question": "5. Which of the following equations govern the evaluation of reduced Young’s modulus from instrumented indentation:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "<img src='images/q5_1.PNG'>",
+        "b": "<img src='images/q5_2.PNG'>",
+        "c": "<img src='images/q5_3.PNG'>",
+        "d": "<img src='images/q5_4.PNG'>"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The geometrical fitting and the contact area term result the expression of reduced elastic modulus as:<img src='images/justification.PNG'>",
+        "b": "The geometrical fitting and the contact area term result the expression of reduced elastic modulus as:<img src='images/justification.PNG'>",
+        "c": "The geometrical fitting and the contact area term result the expression of reduced elastic modulus as:<img src='images/justification.PNG'>",
+        "d": "The geometrical fitting and the contact area term result the expression of reduced elastic modulus as:<img src='images/justification.PNG'>"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Young’s modulus of the material can be obtained from reduced Young’s modulus (E*) via following equation: ",
+      "answers": {
+        "a": "<img src='images/q6_1.PNG'>",
+        "b": "<img src='images/q6_2.PNG'>",
+        "c": "<img src='images/q6_3.PNG'>",
+        "d": "<img src='images/q6_4.PNG'>"
+      },
+      "explanations": {
+        "a": "The expression of reduced elastic modulus (E<sup>*</sup>) is related to stiffness of instrument and sample ‘in series’ with superposition of strain components.",
+        "b": "The expression of reduced elastic modulus (E<sup>*</sup>) is related to stiffness of instrument and sample ‘in series’ with superposition of strain components.",
+        "c": "The expression of reduced elastic modulus (E<sup>*</sup>) is related to stiffness of instrument and sample ‘in series’ with superposition of strain components.",
+        "d": "The expression of reduced elastic modulus (E<sup>*</sup>) is related to stiffness of instrument and sample ‘in series’ with superposition of strain components."
+      },
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
