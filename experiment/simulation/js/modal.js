@@ -1,5 +1,5 @@
 const modalStyle =
-  ".modal-wrapper{position:absolute;z-index:999;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.5)}.modal{margin:20px auto;background-color:#fff;max-width:600px;border-radius:5px}.modal .modal-head{background-color:rgba(0,0,0,.05);padding:12px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom:1px solid}.modal .modal-body{padding:12px 14px}.modal .modal_close{float:right;padding:5px;margin:5px;width:20px;height:20px;text-align:center;font-size:20px;font-weight:700;color:#000;text-decoration:none;cursor:pointer;border-radius:50px}.modal .modal_close:hover{background-color:rgb(0,0,0,.1)}.modal .modal-body p{font-size: 14px;}.modal .btn{color:#515151;background-color:#f2f2f2;padding:6px 8px;border-radius:4px;box-shadow:1px 1px 4px 0px rgba(0,0,0,.20);border:1px solid #bfbfbf}.modal .btn:hover{box-shadow:1px 1px 4px 0px rgba(0,0,0,.30);cursor:pointer;background-color:#efefef;}.model-buttons{display:flex;justify-content:space-between;border-top: 1px solid #bfbfbf;padding-top:10px;margin-top:5px}.pages{display:none;}.pages.active{display:block;}.modal .d-none{display:none;}.lbl-correct{font-weight:600;font-size:16px !important;text-align:center;color:green}.lbl-wrong{font-weight:600;font-size:16px !important;text-align:center;color:red}.modal .m-1{margin:4px}";
+  ".modal-wrapper{position:absolute;z-index:999;top:0;width:100%;height:100%;background-color:rgba(0,0,0,.5)}.modal{margin:20px auto;background-color:#fff;max-width:600px;border-radius:5px}.modal .modal-head{background-color:rgba(0,0,0,.05);padding:12px;border-top-left-radius:5px;border-top-right-radius:5px;border-bottom:1px solid}.modal .modal-body{padding:12px 14px}.modal .modal_close{float:right;padding:5px;margin:5px;width:20px;height:20px;text-align:center;font-size:20px;font-weight:700;color:#000;text-decoration:none;cursor:pointer;border-radius:50px}.modal .modal_close:hover{background-color:rgb(0,0,0,.1)}.modal .modal-body p{font-size: 14px;}.modal .btn{color:#515151;background-color:#f2f2f2;padding:6px 8px;border-radius:4px;box-shadow:1px 1px 4px 0px rgba(0,0,0,.20);border:1px solid #bfbfbf}.modal .btn:hover{box-shadow:1px 1px 4px 0px rgba(0,0,0,.30);cursor:pointer;background-color:#efefef;}.model-buttons{display:flex;justify-content:space-between;border-top: 1px solid #bfbfbf;padding-top:10px;margin-top:5px}.pages{display:none;}.pages.active{display:block;}.modal .d-none{display:none;}.lbl-correct{font-weight:600;font-size:16px !important;text-align:center;color:green}.lbl-wrong{font-weight:600;font-size:16px !important;text-align:center;color:red}.modal .m-1{margin:4px} .option-items{align-items: center;display: flex;column-gap: 10px;}";
 
 class Modal {
   constructor(params) {
@@ -53,7 +53,7 @@ class Modal {
                 ${ques.options
                   .map(
                     (opt, index) =>
-                      `<p class="m-1">
+                      `<p class="m-1 option-items">
                         <input type="radio" id="option-${ques.page}-${index}" name="answer-${ques.page}" value="${
                         ques.correct == index ? 1 : 0
                       }">
