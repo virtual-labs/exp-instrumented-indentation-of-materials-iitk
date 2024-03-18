@@ -1,5 +1,5 @@
 const charts = {};
-const DATA_UPDATE_ANIMATION_DELAY = 600;
+const DATA_UPDATE_ANIMATION_DELAY = 400;
 // in seconds
 const time = [
   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
@@ -165,27 +165,6 @@ function handleStep3() {
   next.classList.remove("disabled");
 
   currentStepProgress = 4;
-
-  modal = new Modal({
-    title: "Can you answer the questions?",
-    body: [
-      {
-        page: 1,
-        title: "This is sample question 1?",
-        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0,
-      },
-      {
-        page: 2,
-        title: "What does point U indicates in the graph?",
-        image: "images/stress-strain-curve2.jpg",
-        options: ["Tensile Strength", "Yield Strength", "Ultimate Tensile Strength", "Plastic Strength"],
-        correct: 2,
-      },
-    ],
-    onClose: handleStep4,
-  });
-  modal.show();
 }
 
 function handleStep4() {
@@ -198,6 +177,136 @@ function handleStep4() {
   next.classList.add("active");
   next.classList.remove("disabled");
 
+  modal = new Modal({
+    title: "Can you answer the questions?",
+    body: [
+      {
+        page: 1,
+        title: "What is instrumented indentation technique?",
+        options: [
+          "That measures hardness and Young’s modulus during indentation of material",
+          "That provides only hardness of material during indentation of material",
+          "That provides only elastic modulus during indentation of material ",
+          "That records instantaneous load vs displacement during indentation of material",
+        ],
+        correct: 3,
+      },
+      {
+        page: 2,
+        title: "How is hardness defined?",
+        options: [
+          "Hardness is defined as resistance of material against wear and erosion",
+          "Hardness is defined as resistance of material against indentation, scratch and plastic deformation",
+          "Hardness is defined as resistance of material against corrosion",
+          "Hardness is defined as resistance of material against passage of electrical current",
+        ],
+        correct: 1,
+      },
+      {
+        page: 3,
+        title: "How is hardness calculated?",
+        options: [
+          "Hardness = Load / Area",
+          "Hardness = Load × Area",
+          "Hardness = Stress / Strain",
+          "Hardness = Stress ×Strain",
+        ],
+        correct: 0,
+      },
+      {
+        page: 4,
+        title: "How is Young’s modulus defined?",
+        options: [
+          "Young’s modulus is defined as the maximum strength of material before fracture",
+          "Young’s modulus is defined as the strength of material at yield point",
+          "Young’s modulus is defined as the ratio of stress to strain in the linearly elastic region of stress-strain curve",
+          "Young’s modulus is defined as the slope of stress to that of strain in the stress-strain curve before failure",
+        ],
+        correct: 2,
+      },
+      {
+        page: 5,
+        title: "What is nanoindentation?",
+        options: [
+          "Nanoindentation is the indentation when load is in the order of ~100s nN (nano-Newtons)",
+          "Nanoindentation is the indentation when displacement depth load is in the order of ~100s nm (nano-meters)",
+          "Nanoindentation is the indentation when duration of dwell time of the indenter at maximum load is in the order of ~100s ns (nano-seconds)",
+          "Nanoindentation is the indentation when the measurement time is in the order of ~100s ns (nano-seconds)",
+        ],
+        correct: 1,
+      },
+      {
+        page: 6,
+        title:
+          "The loading curve during instrumented indentation is given by <img src='images/ques/ques6.jpg' height='18px'/> for which type of indenter tip:",
+        options: ["Berkovich", "Vickers", "Spherical", "Cylindrical"],
+        correct: 2,
+      },
+
+      {
+        page: 7,
+        title:
+          "The unloading curve during instrumented indentation using a Berkovich indenter tip is given as (where P is applied load, h is instantaneous depth, hf is final contact depth after unloading, hc is the and hmax is maximum depth, and α2 is constant):",
+        options: [
+          "<img src='images/ques/ques7op1.jpg' height='24px'/>",
+          "<img src='images/ques/ques7op2.jpg' height='24px'/>",
+          "<img src='images/ques/ques7op3.jpg' height='24px'/>",
+          "<img src='images/ques/ques7op4.jpg' height='24px'/>",
+        ],
+        correct: 1,
+      },
+      {
+        page: 8,
+        title: "The relationship of contact area (A) with the contact depth (hcontact) for a Berkovich tip is:",
+        options: [
+          "<img src='images/ques/ques8op1.jpg' height='24px'/>",
+          "<img src='images/ques/ques8op2.jpg' height='24px'/>",
+          "<img src='images/ques/ques8op3.jpg' height='24px'/>",
+          "<img src='images/ques/ques8op4.jpg' height='24px'/>",
+        ],
+        correct: 0,
+      },
+      {
+        page: 9,
+        title:
+          "The following portion of the load-displacement curve is used to extract the Young’s modulus of material during instrumented indentation:",
+        options: [
+          "First 5-20 % of loading curve",
+          "Last 5-20 % of loading curve",
+          "First 5-20 % of unloading curve",
+          "Last 5-20 % of unloading curve",
+        ],
+        correct: 2,
+      },
+      {
+        page: 10,
+        title:
+          "Which of the following equations govern the evaluation of reduced Young’s modulus from instrumented indentation:",
+        options: [
+          "<img src='images/ques/ques10op1.jpg' height='45px'/>",
+          "<img src='images/ques/ques10op2.jpg' height='45px'/>",
+          "<img src='images/ques/ques10op3.jpg' height='45px'/>",
+          "<img src='images/ques/ques10op4.jpg' height='45px'/>",
+        ],
+        correct: 0,
+      },
+      {
+        page: 11,
+        title:
+          "Young’s modulus of the material can be obtained from reduced Young’s modulus (E*) via following equation:",
+        options: [
+          "<img src='images/ques/ques11op1.jpg' height='45px'/>",
+          "<img src='images/ques/ques11op2.jpg' height='45px'/>",
+          "<img src='images/ques/ques11op3.jpg' height='45px'/>",
+          "<img src='images/ques/ques11op4.jpg' height='45px'/>",
+        ],
+        correct: 3,
+      },
+    ],
+    onClose: handleStep5,
+  });
+  modal.show();
+
   currentStepProgress = 5;
 }
 
@@ -207,13 +316,10 @@ function handleStep5() {
   pane.classList.add("done");
   pane.classList.remove("active");
 
-  // let next = document.getElementById("step6");
-  // next.classList.add("active");
-  // next.classList.remove("disabled");
-
   document.getElementById("btnNext").disabled = true;
   document.getElementById("btnNext").innerText = "Done";
-  // currentStepProgress = 6;
+
+  currentStepProgress = 5;
 }
 
 function plotGraph(graphCtx, data, labelX, labelY) {
