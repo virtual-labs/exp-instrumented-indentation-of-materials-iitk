@@ -1,27 +1,36 @@
 const charts = {};
-const DATA_UPDATE_ANIMATION_DELAY = 400;
-// in seconds
-const time = [
-  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
-  32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,
-  61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73,
-];
+const DATA_UPDATE_ANIMATION_DELAY = 200;
 
-// in nm
-const penetrationDepth = [
-  49, 192, 300, 387, 473, 542, 628, 659, 725, 785, 839, 887, 940, 987, 1040, 1095, 1189, 1193, 1237, 1278, 1326, 1406,
-  1444, 1491, 1494, 1529, 1568, 1608, 1674, 1712, 1738, 1751, 1750, 1754, 1760, 1763, 1767, 1769, 1773, 1774, 1769,
-  1754, 1743, 1732, 1719, 1704, 1689, 1679, 1664, 1646, 1634, 1621, 1606, 1595, 1577, 1561, 1541, 1525, 1507, 1488,
-  1473, 1453, 1434, 1411, 1387, 1364, 1331, 1290, 1287, 1220, 1093, 845, 646, 501,
-];
+const indentationDepth = [
+    0.00801, 0.00896, 0.01141, 0.01149, 0.0135, 0.01438, 0.01921, 0.02576, 0.03424, 0.04563,
+    0.05816, 0.07108, 0.08418, 0.09816, 0.11269, 0.12651, 0.13966, 0.15442, 0.16727, 0.18142,
+    0.19578, 0.21214, 0.23416, 0.24801, 0.26316, 0.27956, 0.2972, 0.31456, 0.33102, 0.34759,
+    0.36343, 0.38063, 0.39716, 0.41389, 0.43082, 0.4479, 0.46569, 0.48234, 0.50019, 0.51768,
+    0.53548, 0.55232, 0.56935, 0.58801, 0.60437, 0.62173, 0.63985, 0.65629, 0.67601, 0.69432,
+    0.71179, 0.72972, 0.74732, 0.76728, 0.78531, 0.80298, 0.80298, 0.80677, 0.80962, 0.81031,
+    0.81142, 0.81277, 0.81341, 0.81334, 0.81278, 0.81274, 0.81123, 0.81015, 0.80821, 0.80686,
+    0.80551, 0.80426, 0.80367, 0.80142, 0.80098, 0.79973, 0.7979, 0.79767, 0.79527, 0.79441,
+    0.79203, 0.79102, 0.78955, 0.78882, 0.78738, 0.7859, 0.78418, 0.78268, 0.78045, 0.77856,
+    0.77733, 0.77622, 0.77432, 0.77178, 0.77086, 0.76881, 0.76681, 0.7652, 0.76287, 0.76073,
+    0.75788, 0.75538, 0.75299, 0.751, 0.74744, 0.74589, 0.74199, 0.73947, 0.73615, 0.7343,
+    0.73331, 0.73091, 0.72893, 0.72449, 0.72099, 0.70118
+  ]
+  const load=  [
+    0.04149, 0.05166, 0.06297, 0.07145, 0.083, 0.0925, 0.12345, 0.18484, 0.28471, 0.4232,
+    0.60267, 0.82228, 1.08217, 1.38099, 1.71978, 2.09926, 2.51904, 2.97793, 3.47801, 4.01619,
+    4.59526, 5.21574, 5.87131, 6.57314, 7.31158, 8.08928, 8.90952, 9.76723, 10.66686, 11.60586,
+    12.58446, 13.60214, 14.66141, 15.75884, 16.8965, 18.07541, 19.29319, 20.55081, 21.84888,
+    23.1877, 24.56382, 25.98191, 27.43976, 28.9376, 30.47478, 32.05147, 33.66868, 35.32651,
+    37.02333, 38.75987, 40.53715, 42.35417, 44.20953, 46.10684, 48.04235, 50.01859, 50.01859,
+    50.01551, 50.01119, 50.00839, 50.00696, 50.00619, 50.00481, 50.00496, 49.00432, 48.00422,
+    47.00251, 46.00272, 45.0028, 44.00088, 43.00109, 42.00101, 41.00019, 40.0008, 39.00104,
+    38.00087, 37.00027, 36.00115, 35.00011, 33.99929, 32.99975, 31.99975, 30.99936, 29.99901,
+    28.99949, 27.99924, 26.99946, 25.99962, 24.99987, 23.99931, 22.99931, 21.99894, 20.9994,
+    19.9991, 18.999, 17.99873, 16.99862, 15.99853, 14.99894, 13.99882, 12.99796, 11.99865,
+    10.99967, 9.99838, 8.99858, 7.99823, 6.99897, 5.99845, 4.99839, 4.53742, 4.03853,
+    3.05465, 2.55683, 1.56459, 1.07648, 0.09478
+  ]
 
-// in mN
-const force = [
-  7, 43, 77, 109, 143, 175, 209, 227, 261, 293, 327, 359, 393, 425, 459, 494, 557, 560, 592, 626, 660, 724, 756, 790,
-  793, 827, 859, 893, 956, 991, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 982, 947, 912, 881, 846,
-  814, 780, 746, 714, 680, 648, 614, 579, 547, 513, 481, 447, 412, 381, 346, 315, 280, 246, 214, 180, 148, 114, 79, 77,
-  45, 11, 1, 0, 0,
-];
 
 var currPos = 0;
 var currentStepProgress = 1;
@@ -62,20 +71,26 @@ function handleStep2() {
   pane.classList.remove("active");
 
   //plot blank graph init graphs
+  // let progress2 = (readingData.stress.length / readingData.strain.length) * currPos;
+
+
   plotGraph(
     document.getElementById("outputGraphA").getContext("2d"),
     {
-      labels: time,
+      labels: indentationDepth,
       datasets: [
         {
+          label: 'Load',
           data: [],
           borderColor: "#3e95cd",
           fill: false,
+          pointRadius: 2,
+          pointHoverRadius: 4,
         },
       ],
     },
-    "Time (s)",
-    "Penetration Depth (nm)"
+    "Indentation Depth (µm)",
+    "Load (mN)"
   );
 
   document.getElementById("btnNext").disabled = true;
@@ -96,7 +111,7 @@ function handleStep2() {
       mit.start(0.02, -1);
     }, 4000);
 
-    let totalSteps = force.length;
+    let totalSteps = load.length;
     let intr = setInterval(() => {
       if (currPos >= totalSteps) {
         clearInterval(intr);
@@ -109,39 +124,34 @@ function handleStep2() {
 
       tableBody.innerHTML += `
             <tr>
-              <td>${time[currPos]}</td>
-              <td>${penetrationDepth[currPos]}</td>
-              <td>${force[currPos]}</td>
+               <td>${parseFloat(indentationDepth[currPos]).toFixed(5)}</td>
+            <td>${parseFloat(load[currPos]).toFixed(5)}</td>
             </tr>
           `;
       currPos++;
 
-      let progress1 = (penetrationDepth.length / totalSteps) * currPos;
+       let progress1 = (load.length / indentationDepth.length) * currPos;
+     
       plotGraph(
         document.getElementById("outputGraphA").getContext("2d"),
         {
-          labels: time,
+          labels:indentationDepth,
           datasets: [
             {
-              yAxisID: "A",
-              data: penetrationDepth.slice(0, progress1),
+              data: load.slice(0, progress1),
+              label: 'Load',
               borderColor: "#3e95cd",
               fill: false,
-              label: "Penetration Depth",
-            },
-            {
-              yAxisID: "B",
-              data: force.slice(0, progress1),
-              borderColor: "brown",
-              fill: false,
-              label: "Force",
+              pointRadius: 2,
+              pointHoverRadius: 4,
             },
           ],
         },
-        "Penetration Depth (nm)",
-        "Time (s)"
+        "Indentation Depth (µm)",
+        "Load (mN)"
       );
     }, DATA_UPDATE_ANIMATION_DELAY);
+   
   });
 
   pane.classList.add("done");
@@ -295,12 +305,12 @@ function handleStep4() {
         title:
           "Young’s modulus of the material can be obtained from reduced Young’s modulus (E*) via following equation:",
         options: [
-          "<img src='images/ques/ques11op1.jpg' height='45px'/>",
-          "<img src='images/ques/ques11op2.jpg' height='45px'/>",
-          "<img src='images/ques/ques11op3.jpg' height='45px'/>",
-          "<img src='images/ques/ques11op4.jpg' height='45px'/>",
+          "<img src='images/ques/ques11op1.png' height='45px'/>",
+          "<img src='images/ques/ques11op2.png' height='45px'/>",
+          "<img src='images/ques/ques11op3.png' height='45px'/>",
+          "<img src='images/ques/ques11op4.png' height='45px'/>",
         ],
-        correct: 3,
+        correct: 0,
       },
     ],
     onClose: handleStep5,
@@ -322,74 +332,57 @@ function handleStep5() {
   currentStepProgress = 5;
 }
 
+
+
 function plotGraph(graphCtx, data, labelX, labelY) {
+  // Check if a chart already exists for this canvas
   let chartObj = charts[graphCtx.canvas.id];
   if (chartObj) {
+    // Update existing chart
     chartObj.config.data.labels = data.labels;
     chartObj.config.data.datasets = data.datasets;
     chartObj.update();
   } else {
+    // Create a new chart
     charts[graphCtx.canvas.id] = new Chart(graphCtx, {
-      type: "line",
-      data: data,
+      type: 'line',
+      data: {
+        labels: data.labels, // Labels for the x-axis (can be indices or actual values)
+        datasets: [
+          {
+            label: 'Load', // Label for the dataset
+            data: data.datasets[0].data, // Data for the y-axis
+            borderColor: '#3e95cd',
+            fill: false,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+            yAxisID: 'yScale'
+          }
+        ]
+      },
       options: {
         responsive: true,
         animation: false,
-        scaleOverride: true,
-        // legend: { display: false },
         scales: {
-          xAxes: [
-            {
-              display: true,
-              scaleLabel: {
-                display: true,
-                labelString: labelX,
-              },
-              ticks: {
-                beginAtZero: true,
-                steps: 20,
-                stepValue: 10,
-                max: Math.max(...time),
-              },
-              // stacked: true,
-            },
-          ],
-          yAxes: [
-            {
-              display: true,
-              position: "left",
-              id: "A",
-              scaleLabel: {
-                display: true,
-                labelString: labelY,
-              },
-              ticks: {
-                beginAtZero: true,
-                steps: 10,
-                stepValue: 5,
-                // max: Math.max(...penetrationDepth),
-                max: 2000,
-              },
-            },
-            {
-              display: true,
-              position: "right",
-              id: "B",
-              scaleLabel: {
-                display: true,
-                labelString: "Force in mN",
-              },
-              ticks: {
-                beginAtZero: true,
-                steps: 10,
-                stepValue: 5,
-                // max: Math.max(...penetrationDepth),
-                max: 2000,
-              },
-            },
-          ],
+          yScale: {
+            id: 'yScale',
+            type: 'linear',
+            min: 0,
+            max: 60,
+          },
+          xScale: {
+            id: 'xScale',
+            type: 'linear',
+            min: 0,
+            max: 1,
+          }
         },
-      },
+        plugins: {
+          legend: {
+            display: true // Show legend if needed
+          }
+        }
+      }
     });
   }
 }

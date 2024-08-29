@@ -127,9 +127,9 @@ function MIT(canvas, ctx) {
       } else if (CURRENT_SAMPLE == "steel") {
         currentSample = sample3Img;
       }
-      let x = (xOffset + 304) * scale;
-      let y = (yOffset + 281) * scale;
-      ctx.drawImage(currentSample, x, y, (currentSample.width * scale) / 6, (currentSample.height * scale) / 6);
+      let x = (xOffset + 460) * scale;
+      let y = (yOffset + 315) * scale;
+      ctx.drawImage(currentSample, x, y, (currentSample.width * scale) / 4, (currentSample.height * scale) / 4);
     }
 
     ctx.save();

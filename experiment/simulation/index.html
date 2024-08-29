@@ -25,17 +25,11 @@
                 <div class="label">Step 1: Select Sample</div>
                 <div class="content" style="display: flex; flex-wrap: wrap">
                   <div class="p-1 pointer" onclick="loadSample('aluminium')" title="Click to select this sample.">
-                    <img src="images/sample/aluminium/logo.png" alt="" width="60" />
-                    <h6>Aluminium Sample</h6>
-                  </div>
-                  <div class="p-1 pointer" onclick="loadSample('brass')" title="Click to select this sample.">
-                    <img src="images/sample/brass/logo.png" alt="" width="60" />
-                    <h6>Brass Sample</h6>
-                  </div>
-                  <div class="p-1 pointer" onclick="loadSample('steel')" title="Click to select this sample.">
                     <img src="images/sample/steel/logo.png" alt="" width="60" />
-                    <h6>Mild Steel Sample</h6>
+                    <h6>Steel Sample</h6>
                   </div>
+               
+                  
                 </div>
               </div>
 
@@ -64,9 +58,8 @@
                     <table>
                       <thead>
                         <tr>
-                          <td>Time (s)</td>
-                          <td>Penetration Depth (nm)</td>
-                          <td>Force (mN)</td>
+                          <td>Indentation Depth (µm)</td>
+                          <td>Load (mN)</td>
                         </tr>
                       </thead>
                       <tbody id="testData"></tbody>
@@ -81,7 +74,7 @@
                 <div class="content">
                   <p>Indention Point Scaled view</p>
                   <div>
-                    <img src="images/results/output.bmp" alt="" style="width: 100%" />
+                    <img src="images/results/Steel-p vs h curve.png" alt="" style="width: 100%" />
                   </div>
                 </div>
               </div>
@@ -108,7 +101,9 @@
     <script src="js/modal.js"></script>
     <script src="js/components.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="js/index.js"></script>
   </body>
