@@ -178,10 +178,10 @@ function MIT(canvas, ctx) {
 
   const isInside = ({ x, y }) => {
     boundary = {
-      xmin: (xOffset + 185) * scale,
-      xmax: (xOffset + 450) * scale,
+      xmin: (xOffset + 140) * scale,
+      xmax: (xOffset + 600) * scale,
       ymin: (yOffset + 140) * scale,
-      ymax: (yOffset + 550) * scale,
+      ymax: (yOffset + 450) * scale,
     };
 
     // ctx.fillRect(boundary.xmin, boundary.ymin, boundary.xmax - boundary.xmin, boundary.ymax - boundary.ymin);
