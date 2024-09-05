@@ -20,7 +20,7 @@ Once the indenter geometry is known, the contact area (A<sub>contact</sub>) can 
 <b>Estimation of Young’s Modulus:</b><br><br>
 Young’s modulus is defined as the slope of stress strain curve during the elastic portion (when the Hooke’s law is valid). In other words, Young’s modulus is fundamental property of material and governs the stiffness of the material. The elastic modulus (Young’s modulus) of the material can be evaluated using equation (4):<br><br>
 <img src="images/formula5.PNG"><br><br>
-<img src="images/Eq.5.jpeg">(5)<br><br>
+<img src='images/q6_1.png'>(5)<br><br>
 E and u are for sample and Ei and ui for indenter<br>
 where u is the Poisson’s ratio. As the material and the indenter tip are both in series and result the net deformation, thus the Young’s modulus of material (or sample) need to be extracted through equation (5).<br><br>
 It may be noted that the elastic modulus is the stiffness of the associated atomic bonds, thus a high value can be expected for a perfect material. A high Young’s modulus can be obtained during instrumented nanoindentation due to size effects. Thus, continuous stiffness measurement may be obtained (i.e. elastic modulus change from surface to bulk, and the value below which stiffness does not change should be used for reporting the Young’s modulus when using instrumented indentation).
