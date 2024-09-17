@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. The loading curve during instrumented indentation is given by P=α_1 h^1.5 for which type of indenter tip:",
+      "answers": {
+        "a": "Berkovich",
+        "b": "Vickers",
+        "c": "Spherical",
+        "d": "Cylindrical"
+      },
+      "explanations": {
+        "a": "The exponent of 1.5 is for spherical indenter tip, whereas a value of 1 for cylindrical punch and value of 2 is used for conical indentation tips.",
+        "b": "The exponent of 1.5 is for spherical indenter tip, whereas a value of 1 for cylindrical punch and value of 2 is used for conical indentation tips.",
+        "c": "The exponent of 1.5 is for spherical indenter tip, whereas a value of 1 for cylindrical punch and value of 2 is used for conical indentation tips.",
+        "d": "The exponent of 1.5 is for spherical indenter tip, whereas a value of 1 for cylindrical punch and value of 2 is used for conical indentation tips."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. The unloading curve during instrumented indentation using a Berkovich indenter tip is given as (where P is applied load, h is instantaneous depth, hf is final contact depth after unloading, hc is the and hmax is maximum depth, and α2 is constant):",
+      "answers": {
+        "a": "P=α<sub>2</sub> (h-h<sub>max</sub> )<sup>1.5</sup>",
+        "b": "P=α<sub>2</sub> (h-h<sub>f</sub>)<sup>2</sup>",
+        "c": "P=α<sub>2</sub> (h<sub>max</sub>-h<sub>f</sub> )<sup>1.5</sup>",
+        "d": "P=α<sub>2</sub> (h<sub>f</sub>-h<sub>max</sub> )<sup>2</sup>"
+      },
+      "explanations": {
+        "a": "The exponent of 2 is used for Berkovich indentation tips, and the unloading is defined by difference between instantaneous depth and final depth after unloading",
+        "b": "The exponent of 2 is used for Berkovich indentation tips, and the unloading is defined by difference between instantaneous depth and final depth after unloading",
+        "c": "The exponent of 2 is used for Berkovich indentation tips, and the unloading is defined by difference between instantaneous depth and final depth after unloading",
+        "d": "The exponent of 2 is used for Berkovich indentation tips, and the unloading is defined by difference between instantaneous depth and final depth after unloading"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The relationship of contact area (A) with the contact depth (hcontact) for a Berkovich tip is:",
+      "answers": {
+        "a": "A<sub>contact</sub>=24.5 h<sub>contact</sub><sup>2</sup>",
+        "b": "A<sub>contact</sub>=24.5 h<sub>contact</sub>",
+        "c": "A<sub>contact</sub>=2 πR h<sub>contact</sub><sup>2</sup>",
+        "d": "A<sub>contact</sub>=2 πR h<sub>contact</sub>"
+      },
+      "explanations": {
+        "a": "The geometric relation of the contact area for a three sided Bekovich’s as well as 4-sided Vicker’s indenter is ~ 24.5 h<sup>2</sup>",
+        "b": "The geometric relation of the contact area for a three sided Bekovich’s as well as 4-sided Vicker’s indenter is ~ 24.5 h<sup>2</sup>",
+        "c": "The geometric relation of the contact area for a three sided Bekovich’s as well as 4-sided Vicker’s indenter is ~ 24.5 h<sup>2</sup>",
+        "d": "The geometric relation of the contact area for a three sided Bekovich’s as well as 4-sided Vicker’s indenter is ~ 24.5 h<sup>2</sup>"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The following portion of the load-displacement curve is used to extract the Young’s modulus of material during instrumented indentation:",
+      "answers": {
+        "a": "First 5-20 % of loading curve",
+        "b": "Last 5-20 % of loading curve",
+        "c": "First 5-20 % of unloading curve",
+        "d": "Last 5-20 % of unloading curve"
+      },
+      "explanations": {
+        "a": "The first 5-20% of unloading curve is utilized in calculating the Young’s modulus as the immediate response upon unloading is purely elastic, and later portion of curve may exhibit plastic recovery and viscoplastic response.",
+        "b": "The first 5-20% of unloading curve is utilized in calculating the Young’s modulus as the immediate response upon unloading is purely elastic, and later portion of curve may exhibit plastic recovery and viscoplastic response.",
+        "c": "The first 5-20% of unloading curve is utilized in calculating the Young’s modulus as the immediate response upon unloading is purely elastic, and later portion of curve may exhibit plastic recovery and viscoplastic response.",
+        "d": "The first 5-20% of unloading curve is utilized in calculating the Young’s modulus as the immediate response upon unloading is purely elastic, and later portion of curve may exhibit plastic recovery and viscoplastic response."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Which of the following equations govern the evaluation of reduced Young’s modulus from instrumented indentation:",
+      "answers": {
+        "a": "<img src='images/q5_1.PNG'>",
+        "b": "<img src='images/q5_2.PNG'>",
+        "c": "<img src='images/q5_3.PNG'>",
+        "d": "<img src='images/q5_4.PNG'>"
+      },
+      "explanations": {
+        "a": "The geometrical fitting and the contact area term result the expression of reduced elastic modulus as:<img src='images/justification.PNG'>",
+        "b": "The geometrical fitting and the contact area term result the expression of reduced elastic modulus as:<img src='images/justification.PNG'>",
+        "c": "The geometrical fitting and the contact area term result the expression of reduced elastic modulus as:<img src='images/justification.PNG'>",
+        "d": "The geometrical fitting and the contact area term result the expression of reduced elastic modulus as:<img src='images/justification.PNG'>"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Young’s modulus of the material can be obtained from reduced Young’s modulus (E*) via following equation: ",
+      "answers": {
+        "a": "<img src='images/q6_1.png'>",
+        "b": "<img src='images/q6_2.png'>",
+        "c": "<img src='images/q6_3.png'>",
+        "d": "<img src='images/q6_4.png'>"
+      },
+      "explanations": {
+        "a": "The expression of reduced elastic modulus (E<sup>*</sup>) is related to stiffness of instrument and sample ‘in series’ with superposition of strain components.",
+        "b": "The expression of reduced elastic modulus (E<sup>*</sup>) is related to stiffness of instrument and sample ‘in series’ with superposition of strain components.",
+        "c": "The expression of reduced elastic modulus (E<sup>*</sup>) is related to stiffness of instrument and sample ‘in series’ with superposition of strain components.",
+        "d": "The expression of reduced elastic modulus (E<sup>*</sup>) is related to stiffness of instrument and sample ‘in series’ with superposition of strain components."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What is instrumented indentation technique?",
+      "answers": {
+        "a": "That measures hardness and Young’s modulus during indentation of material",
+        "b": "That provides only hardness of material during indentation of material",
+        "c": "That provides only elastic modulus during indentation of material ",
+        "d": "That records instantaneous load vs displacement during indentation of material"
+      },
+      "explanations": {
+        "a": "Measurement is eventual, but the recording of instantaneous displacement at applied load makes it ‘instrumented’ indentation.",
+        "b": "Measurement is eventual, but the recording of instantaneous displacement at applied load makes it ‘instrumented’ indentation.",
+        "c": "Measurement is eventual, but the recording of instantaneous displacement at applied load makes it ‘instrumented’ indentation.",
+        "d": "Measurement is eventual, but the recording of instantaneous displacement at applied load makes it ‘instrumented’ indentation."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. How is hardness defined?",
+      "answers": {
+        "a": "Hardness is defined as resistance of material against wear and erosion",
+        "b": "Hardness is defined as resistance of material against indentation, scratch and plastic deformation",
+        "c": "Hardness is defined as resistance of material against corrosion",
+        "d": "Hardness is defined as resistance of material against passage of electrical current"
+      },
+      "explanations": {
+        "a": "Hardness is defined as resistance of material against indentation, scratch and plastic deformation. The ability of material to resist from imparting any impression of indent or change of shape or any damage is called as hardness.",
+        "b": "Hardness is defined as resistance of material against indentation, scratch and plastic deformation. The ability of material to resist from imparting any impression of indent or change of shape or any damage is called as hardness.",
+        "c": "Hardness is defined as resistance of material against indentation, scratch and plastic deformation. The ability of material to resist from imparting any impression of indent or change of shape or any damage is called as hardness.",
+        "d": "Hardness is defined as resistance of material against indentation, scratch and plastic deformation. The ability of material to resist from imparting any impression of indent or change of shape or any damage is called as hardness."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. How is hardness calculated? ",
+      "answers": {
+        "a": "Hardness = Load / Area ",
+        "b": "Hardness = Load × Area",
+        "c": "Hardness = Stress / Strain",
+        "d": "Hardness = Stress ×Strain"
+      },
+      "explanations": {
+        "a": "Hardness is defined as the contact resistance (i.e. resistance offered by the contact area) of material against applied load during indentation.",
+        "b": "Hardness is defined as the contact resistance (i.e. resistance offered by the contact area) of material against applied load during indentation.",
+        "c": "Hardness is defined as the contact resistance (i.e. resistance offered by the contact area) of material against applied load during indentation.",
+        "d": "Hardness is defined as the contact resistance (i.e. resistance offered by the contact area) of material against applied load during indentation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. How is Young’s modulus defined?",
+      "answers": {
+        "a": "Young’s modulus is defined as the maximum strength of material before fracture",
+        "b": "Young’s modulus is defined as the strength of material at yield point",
+        "c": "Young’s modulus is defined as the ratio of stress to strain in the linearly elastic region of stress-strain curve ",
+        "d": "Young’s modulus is defined as the slope of stress to that of strain in the stress-strain curve before failure "
+      },
+      "explanations": {
+        "a": "Young’s modulus governs stiffness of material, and is evaluated via slope (stress to strain ratio) in the elastic region of stress-strain curve (i.e. when Hooke’s law is valid)",
+        "b": "Young’s modulus governs stiffness of material, and is evaluated via slope (stress to strain ratio) in the elastic region of stress-strain curve (i.e. when Hooke’s law is valid)",
+        "c": "Young’s modulus governs stiffness of material, and is evaluated via slope (stress to strain ratio) in the elastic region of stress-strain curve (i.e. when Hooke’s law is valid)",
+        "d": "Young’s modulus governs stiffness of material, and is evaluated via slope (stress to strain ratio) in the elastic region of stress-strain curve (i.e. when Hooke’s law is valid)"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. What is nanoindentation?",
+      "answers": {
+        "a": "Nanoindentation is the indentation when load is in the order of ~100s nN (nano-Newtons)",
+        "b": "Nanoindentation is the indentation when displacement depth load is in the order of ~100s nm (nano-meters)",
+        "c": "Nanoindentation is the indentation when duration of dwell time of the indenter at maximum load is in the order of ~100s ns (nano-seconds)",
+        "d": "Nanoindentation is the indentation when the measurement time is in the order of ~100s ns (nano-seconds)"
+      },
+      "explanations": {
+        "a": "Nanoindentation technique utilized indentation depth regime in the range of ~100s of nm.",
+        "b": "Nanoindentation technique utilized indentation depth regime in the range of ~100s of nm.",
+        "c": "Nanoindentation technique utilized indentation depth regime in the range of ~100s of nm.",
+        "d": "Nanoindentation technique utilized indentation depth regime in the range of ~100s of nm."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
