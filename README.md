@@ -1,9 +1,8 @@
 ## Introduction
 
 
-<b>Discipline | <b> Mechanical Enginnering
-
-:--|:--|
+<b>Discipline | <b> Mechanical Enginnering|
+|:--|:--|
 <b> Lab | <b> Mechanical Metallurgy Lab
 <b> Experiment|  <b> Instrumented Indentation of Materials
 
