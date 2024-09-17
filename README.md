@@ -1,24 +1,24 @@
 ## Introduction
 
 
-<b>Discipline | <b>computer Science
+<b>Discipline | <b> Mechanical Enginnering
+
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Mechanical Metallurgy Lab
+<b> Experiment|  <b> Instrumented Indentation of Materials
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+<b> To perform instrumented nanoindentation and micro-indentation of material
 
-<b>Name of Developer | <b> Fill the name of experiment owner here 
+<b>Name of Developer | <b> Prof. Sudhansu S. Singh , Prof. Shashank Shekhar
 :--|:--|
-<b> Institute | <b>  
-<b> Email id|     <b>  
-<b> Department |  
+<b> Institute | <b>IIT Kanpur
+<b> Email id|     <b>sudhanss@iitk.ac.in , shashank@iitk.ac.in
+<b> Department | Materials Science & Engineering
 
 ### Contributors List
 
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
-1 | . | . | . | . | .
-2 | . | . | . | . | .
+1 |Mr. Abhineet | Student | CSE | REC Kannauj | 198.abhineet@gmail.com

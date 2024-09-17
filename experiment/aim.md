@@ -1,1 +1,1 @@
-### Aim of the experiment
+To perform instrumented nanoindentation and micro-indentation of material
